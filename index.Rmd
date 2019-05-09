@@ -12,13 +12,13 @@ Carrege o dataset gapminder, contido no pacote gapminder. Observe as primeiras 6
 # instale o pacote se necessário: install.packages(...)
 
 # carregue o pacote
-library(tidyverse)
+library(gapminder)
 
 # agora que você carregou o pacote, o objeto gapminder pode ser acessado. Dê uma olhada:
-head("gapminder")
+head(gapminder)
 
 # quantas linhas?
-nrow("gapminder")
+nrow(gapminder)
 ```
 
 tentativa 2
