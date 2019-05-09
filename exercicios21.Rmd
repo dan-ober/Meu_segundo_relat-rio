@@ -1,11 +1,18 @@
 ---
 title: "Exercicio 2.1"
 output: 
-  html_document:
-    df_print: paged
+  rmdformats::readthedown:
+      toc_depth: 3
+      css: estilo.css
+    
 ---
 
-2.1
+#Teste Format
+
+##Exercícios
+
+
+###2.1
 Carrege o dataset gapminder, contido no pacote gapminder. Observe as primeiras 6 linhas com a função head() e descreva brevemente o que você observa. Quantas linhas este dataset tem? Utilize a função nrow():
 
 ```{r}
@@ -22,7 +29,7 @@ nrow(gapminder)
 ```
 
 
-2.2
+###2.2
 
 Quantos anos estão disponíveis neste dataset? Quantas observações (“data-points”) existem para cada ano? Abaixo temos o código completo para responder a essas perguntas (lembre-se dos verbos do dplyr, e caso você não conheça alguma das funções, consulte help(...) ou ?...).
 
@@ -30,19 +37,23 @@ Quantos anos estão disponíveis neste dataset? Quantas observações (“data-p
 ```{r}
 # Número de anos diferentes:
 
-gapminder %>%
-  select(year) %>%
-  unique() %>%
-  nrow()
-  
-# número de países disponíveis por ano?
 
-gapminder %>%  
-  group_by(year) +
-  summarize( n=n(country) )
+  
+
 ```
 
 
+Exemplo para o uso de LATEX: 
+
+Esse artigo é sobre o crescimento populacional q usa a seguinte formula:
+
+
+$$a=b\pi$$
+
+```{r, echo=F, out.width="50%",fig.align='center'}
+knitr::include_graphics("mp-rj.png")
+
+```
 
 
 
