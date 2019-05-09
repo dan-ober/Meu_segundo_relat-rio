@@ -21,6 +21,33 @@ head(gapminder)
 nrow(gapminder)
 ```
 
-tentativa 2
-testando a atualização de página na web
-terceira tentativa
+
+2.2
+
+Quantos anos estão disponíveis neste dataset? Quantas observações (“data-points”) existem para cada ano? Abaixo temos o código completo para responder a essas perguntas (lembre-se dos verbos do dplyr, e caso você não conheça alguma das funções, consulte help(...) ou ?...).
+
+
+```{r}
+# Número de anos diferentes:
+
+gapminder %>%
+  select(year) %>%
+  unique() %>%
+  nrow()
+  
+# número de países disponíveis por ano?
+
+gapminder %>%  
+  group_by(year) +
+  summarize( n=n(country) )
+```
+
+
+
+
+
+
+
+
+
+
