@@ -1,0 +1,23 @@
+---
+title: "Exercicio 2.1"
+output:
+  html_document:
+    df_print: paged
+---
+
+2.1
+Carrege o dataset gapminder, contido no pacote gapminder. Observe as primeiras 6 linhas com a função head() e descreva brevemente o que você observa. Quantas linhas este dataset tem? Utilize a função nrow():
+
+```{r}
+# instale o pacote se necessário: install.packages(...)
+
+# carregue o pacote
+library(...)
+
+# agora que você carregou o pacote, o objeto gapminder pode ser acessado. Dê uma olhada:
+head(...)
+
+# quantas linhas?
+nrow(...)
+```
+
