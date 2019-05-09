@@ -1,6 +1,6 @@
 ---
 title: "Exercicio 2.1"
-output:
+output: 
   html_document:
     df_print: paged
 ---
@@ -12,12 +12,15 @@ Carrege o dataset gapminder, contido no pacote gapminder. Observe as primeiras 6
 # instale o pacote se necessário: install.packages(...)
 
 # carregue o pacote
-library(...)
+library(tidyverse)
 
 # agora que você carregou o pacote, o objeto gapminder pode ser acessado. Dê uma olhada:
-head(...)
+head("gapminder")
 
 # quantas linhas?
-nrow(...)
+nrow("gapminder")
 ```
 
+tentativa 2
+testando a atualização de página na web
+terceira tentativa
